@@ -1,0 +1,16 @@
+title: 'nihao wode shijie , '
+description: 'wodeshijie , '
+template:
+  repo: nihao-wode-shijie-template
+  name: nihao-wode-shijie
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
